@@ -1,88 +1,80 @@
-<div class="header" id="top">
-   <h1>Scroll Down</h1>
-   <i class="fa fa-angle-down animated bounce"></i>
-</div>
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Gallery (Flexbox and CSS Animations/Transitions)</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400|Abril+Fatface" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
-<div class="section animate">
-   <div class="middle">
-      <img src="https://images.unsplash.com/photo-1460400408855-36abd76648b9?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
-   </div>
-   <div class="left title">
-      <div class="content">
-         <h2>A glorious nature shot.</h2>
-         <p>Wow. What a wonderful image. And look! there are even more images on the right side. Amazing. If you click below, I bet you'll get teleported to a magical land.</p>
-         <a href="#" class="btn-primary">Learn more</a>
-      </div>
-   </div>
-   <div class="right tiles">
-      <img src="https://images.unsplash.com/photo-1460400408855-36abd76648b9?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
-      <img src="https://images.unsplash.com/photo-1460400408855-36abd76648b9?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
-      <img src="https://images.unsplash.com/photo-1460400408855-36abd76648b9?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
-      <img src="https://images.unsplash.com/photo-1460400408855-36abd76648b9?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
-   </div>
-</div>
+  
+      <link rel="stylesheet" href="css/style.css">
 
-<div class="section">
-   <div class="middle">
-      <img src="https://images.unsplash.com/photo-1464655646192-3cb2ace7a67e?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
-   </div>
-   <div class="right title">
-      <div class="content">
-         <h2>Check out this guy.</h2>
-         <p>What an interesting looking person! I wonder if they've ever climbed Mount Everest, or seen the Egyptian Pyramids. If not, I hope that one day they get to. You go random stock image person! Follow your dreams!</p>
-      </div>
-   </div>
-   
-   <div class="left tiles">
-      <img src="https://images.unsplash.com/photo-1464655646192-3cb2ace7a67e?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
-      <img src="https://images.unsplash.com/photo-1464655646192-3cb2ace7a67e?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
-      <img src="https://images.unsplash.com/photo-1464655646192-3cb2ace7a67e?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
-      <img src="https://images.unsplash.com/photo-1464655646192-3cb2ace7a67e?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
-   </div>
-   
-</div>
+  
+</head>
 
-<div class="section">
-   <div class="middle">
-      <img src="https://images.unsplash.com/photo-1465326117523-6450112b60b2?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
-   </div>
-   <div class="left title">
-      <div class="content">
-         <h2>That is one pretty building.</h2>
-         <p>I once thought about becoming an architect. I wanted to create a house fit for a king. But then I failed maths. So I became a frontend developer instead.</p>
-      </div>
-   </div>
-   
-   <div class="right tiles">
-      <img src="https://images.unsplash.com/photo-1465326117523-6450112b60b2?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
-      <img src="https://images.unsplash.com/photo-1465326117523-6450112b60b2?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
-      <img src="https://images.unsplash.com/photo-1465326117523-6450112b60b2?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
-      <img src="https://images.unsplash.com/photo-1465326117523-6450112b60b2?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
-   </div>
-   
-</div>
+<body>
+  
+<div id="container">
+  <div class="slide anim-in">
+    <div class="image" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/venice.jpg)"></div>
+    <div class="overlay"></div>
+    <div class="content">
+      <h1 class="title" data-title="Venice">Venice</h1>
+      <div class="emblem" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/italian-emblem.svg)"></div>
+      <ul class="city-info">
+        <li class="country">Country: Italy</li>
+        <li class="founded">Founded: 697</li>
+        <li class="population">Population: 260,060</li>
+      </ul>
+    </div>
+    <div class="btn-close"></div>
+  </div>
+  <div class="slide anim-in">
+    <div class="image" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/paris.jpg)"></div>
+    <div class="overlay"></div>
+    <div class="content">
+      <h1 class="title" data-title="Paris">Paris</h1>
+      <div class="emblem" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/french-emblem.svg)"></div>
+      <ul class="city-info">
+        <li class="country">Country: France</li>
+        <li class="founded">Founded: ~250BC</li>
+        <li class="population">Population: 2.2 Million</li>
+      </ul>
+    </div>
+    <div class="btn-close"></div>
+  </div>
+  <div class="slide anim-in">
+    <div class="image" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/salzburg.jpg)"></div>
+    <div class="overlay"></div>
+    <div class="content">
+      <h1 class="title" data-title="Salzburg">Salzburg</h1>
+      <div class="emblem" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/austrian-emblem.svg)"></div>
+      <ul class="city-info">
+        <li class="country">Country: Austria</li>
+        <li class="founded">Founded: 1622</li>
+        <li class="population">Population: 145,871</li>
+      </ul>
+    </div>
+    <div class="btn-close"></div>
+  </div>
+  <div class="slide anim-in">
+    <div class="image" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/prague.jpg)"></div>
+    <div class="overlay"></div>
+    <div class="content">
+      <h1 class="title" data-title="Prague">Prague</h1>
+      <div class="emblem" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/czech-emblem.svg)"></div>
+      <ul class="city-info">
+        <li class="country">Country: Czech Republic</li>
+        <li class="founded">Founded: 870</li>
+        <li class="population">Population: 1.2 Million</li>
+      </ul>
+    </div>
+    <div class="btn-close"></div>
+  </div>
+</div><a id="codepen-link" href="http://www.codepen.io/seanfree" target="_blank"></a>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 
-<div class="section">
-   <div class="middle">
-      <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
-   </div>
-   <div class="right title">
-      <div class="content">
-         <h2>The future is now.</h2>
-         <p>Check out that technology! Imagine if we went back in time and put one of those in the hands of a neanderthal. Do you think they'd be impressed, or just try to club us to death?</p>
-      </div>
-   </div>
-   
-   <div class="left tiles">
-      <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
-      <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
-      <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
-      <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
-   </div>
-   
-</div>
+    <script src="js/index.js"></script>
 
-<div class="footer">
-   <a href="#top" class="scrollTo"><i class="fa fa-angle-up animated bounce"></i></a>
-   <h1>Scroll Up</h1>
-</div>
+</body>
+</html>
