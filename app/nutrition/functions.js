@@ -1,57 +1,24 @@
-$(document).ready(function(){
+(function(window, document, $, undefined) {
+	var $slides, $btnArr;
 
-   var $sm = 480;
-   var $md = 768;
+	function onClick(e) {
+		var $target = $(e.target);
+		if ($target.hasClass('slide') && !$target.hasClass('active') && !$target.siblings().hasClass('active')) {
+			$target.removeClass('anim-in last-viewed').addClass('active')
+			$target.siblings().removeClass('anim-in last-viewed').addClass('anim-out');
+		}
+	}
 
-   function resizeThis() {
-      $imgH = $('.middle img').width();
-      if ($(window).width() >= $sm) {
-         $('.left,.right,.section').css('height', $imgH);
-      } else {
-         $('.left,.right,.section').css('height', 'auto');
-      }
-   }
+	function closeSlide(e) {
+		var $slide = $(e.target).parent();
+		$slide.removeClass('active anim-in').addClass('last-viewed');
+		$slide.siblings().removeClass('anim-out').addClass('anim-in');
+	}
 
-   resizeThis();
-
-   $(window).resize(function(){
-      resizeThis();
-   });
-
-   $(window).scroll(function() {
-      $('.section').each(function(){
-         var $elementPos = $(this).offset().top;
-         var $scrollPos = $(window).scrollTop();
-
-         var $sectionH = $(this).height();
-         var $h = $(window).height();
-         var $sectionVert = (($h/2)-($sectionH/4));
-
-
-         if (($elementPos - $sectionVert) <= $scrollPos && ($elementPos - $sectionVert) + $sectionH > $scrollPos) {
-            $(this).addClass('animate');
-         } else {
-            $(this).removeClass('animate');
-         }
-      });
-   });
-
-   $('.btn-primary').click(function(){
-      alert('I lied');
-   });
-});
-
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
+	$(function() {
+		$slides = $('.slide');
+		$btnArr = $slides.find('.btn-close');
+		$slides.on('click', onClick);
+		$btnArr.on('click', closeSlide);
+	});
+})(this, document, jQuery);
