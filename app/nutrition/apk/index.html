@@ -1,7 +1,27 @@
-<html> 
-
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>下载 食物书</title>
+</head>
 <body>
-  <a href="app-release.apk" download="app-release.apk">
-    <div>Download</div>
-  </a></body>
+    <h1>如果用微信浏览器打开可以看到下面的文字</h1>
+    <p></p>
+</body>
 </html>
+<script type="text/javascript">
+    window.onload = function(){
+    if(isWeiXin()){
+        var p = document.getElementsByTagName('p');
+        p[0].innerHTML = window.navigator.userAgent;
+    }
+}
+function isWeiXin(){
+    var ua = window.navigator.userAgent.toLowerCase();
+    if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+        return true;
+    }else{
+        return false;
+    }
+}
+</script>
