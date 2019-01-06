@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html, body { height: 100%; width: 100%; margin: 0; }
+
+body { background-color: #e0f2f1;
+        display: flex;
+        align-items: center;        /* 垂直居中 */
+        justify-content: center;    /* 水平居中 */}
+
+.ul-all {
+    list-style: none;
+}
+
+.weixin-explain-title {
+    color: #46a69a; margin: 0 auto; padding: 5%; font-size: 4vh
+}
+
+.weixin-explain-desc {
+    color: #26a69a; padding-bottom: 60%; font-size: 2vh; padding-left: 5%; padding-right: 5%
+}
+
+.image-container { text-align:center;}
+.image-icon {
+    width: 50%; height: auto; 
+}
+
+.button-container { padding-bottom: 40%; width: 100%; height: auto; display: block; float:center;
+    text-align:center;
+}
+
+.myButton {
+	background-color:transparent;
+	-moz-border-radius:3vh;
+	-webkit-border-radius:3vh;
+	border-radius:3vh;
+	border:2px solid #46a69a;
+	display: inline-block;
+	cursor:pointer;
+	color:#46a69a;
+	font-family:Trebuchet MS;
+	font-size:2vh;
+    padding:1vh 2vh;
+    margin: 1vh 0px;
+    text-decoration:none;
+
+}
+.myButton:hover {
+	background-color:transparent;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}

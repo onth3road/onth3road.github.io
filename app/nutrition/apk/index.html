@@ -3,17 +3,34 @@
 <head>
     <meta charset="utf-8"/>
     <title>下载 食物书</title>
-</head>
+    <link rel="stylesheet" href="style.css">
+  </head>
 <body>
-    <h1>如果用微信浏览器打开可以看到下面的文字</h1>
-    <p></p>
+  <div>
+    <ul id="explain" class="ul-all">
+        <li class="weixin-explain-title">请点击右上角「三个点」，选择「从浏览器打开」，然后开始下载。</li>
+        <li class="weixin-explain-desc">微信内置浏览器屏蔽了下载功能，必须由其他浏览器打开才能开始下载。</li>
+    </ul>
+
+    <ul id="download" class="ul-all">
+        <li class="image-container"><img src="icon.png" alt="icon" class="image-icon"></li>
+        <li class="button-container"><a class="myButton" href="app-release.apk" download="nutrition.apk">下载应用</a></li>
+    </ul>
+
+  </div>
+    
 </body>
 </html>
 <script type="text/javascript">
     window.onload = function(){
     if(isWeiXin()){
-        var p = document.getElementsByTagName('p');
-        p[0].innerHTML = window.navigator.userAgent;
+
+      var download = document.getElementById("download");
+      download.style.display = "none";
+
+    } else {
+      var explain = document.getElementById("explain");
+      explain.style.display = "none";
     }
 }
 function isWeiXin(){
