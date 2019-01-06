@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html, body { height: 100%; width: 100%; margin: 0; }
+
+body { display: flex; background-color: #e0f2f1; flex-wrap: wrap }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s;
+}  
+
+.card-image {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s; border-radius: 5px;
+}
+
+.banner-container { 
+    height: 23%; width: 100%; display: flex; align-items: center;
+    background-color: #26a69a; opacity: 0.85; }
+
+.banner-left-container {
+    position: relative; margin:0;
+    padding-left: 5%; width: 40%; height: auto;
+}
+
+.banner-right-container {
+    text-align: center; height: 70%; width: 20%;
+}
+
+.banner-center-container {
+    text-align: right; height: 70%; width: 40%; display:block; 
+}
+
+.qrcode {
+    height: 100%; width: auto;
+}
+
+.banner-title { 
+    height: auto; width: 100%; color: white; font-size: 8vh; bottom: 0;
+}
+
+.banner-desc {
+    float: top; height: auto; width: 100%;
+    color: white; font-size: 3vh; 
+}
+
+.image-container {
+    text-align: center; display: block; float: left; width: 50%; align-items: center
+}
+
+.image-container img {
+    display: inline-block; margin-left: auto; margin-right: auto; height: 70%; margin-top: 2vh; 
+}
+
+.sliders-container {
+    padding-top: 3%; padding-bottom: 1%; height: 70%; width: 100%; text-align: center
+}
+
+.slide {
+    text-align: center; display: flex; width: 100%; height:100%; align-items: center;
+}
+
+.desc {
+    display: inline-flex; height: 100%; width: 40%; margin-top: 10vh; flex-wrap: wrap
+}
+
+.desc-title {
+    color: #26a69a; font-size: 4vh; margin: 2vh
+}
+
+.desc-content {
+    color: #26a69a; font-size: 2vh; margin-top: 1px
+}
+
+.myButton {
+	background-color:transparent;
+	-moz-border-radius:3vh;
+	-webkit-border-radius:3vh;
+	border-radius:3vh;
+	border:2px solid #ffffff;
+	display: inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:2vh;
+    padding:1vh 2vh;
+    margin: 1vh 0px;
+    text-decoration:none;
+}
+.myButton:hover {
+	background-color:transparent;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.desc-ul { list-style: none; padding-left: 0; text-align: left }
+
+
+@media only screen and (min-width: 768px) {}
