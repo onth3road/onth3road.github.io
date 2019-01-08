@@ -71,7 +71,7 @@ body { display: flex; background-color: #e0f2f1; flex-wrap: wrap }
 }
 
 .desc-title {
-    color: #26a69a; font-size: 5vh; margin: 2vh
+    color: #26a69a; font-size: 4.5vh; margin: 2vh
 }
 
 .desc-content {
