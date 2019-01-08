@@ -67,7 +67,7 @@ body { display: flex; background-color: #e0f2f1; flex-wrap: wrap }
 }
 
 .desc {
-    display: inline-flex; height: 100%; width: 40%; margin-top: 10vh; flex-wrap: wrap
+    display: inline-flex; height: 100%; width: 40%; margin-top: 10vh; flex-wrap: wrap; margin-left: -10vw
 }
 
 .desc-title {
